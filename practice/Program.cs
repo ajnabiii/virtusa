@@ -4,42 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Permutations
+namespace ConsoleApp1
 {
     internal class Program
     {
-        public static void permutation(String str, int l, int r)
-        {
-            if (l == r)
-            {
-                Console.WriteLine(str);
-            }
-            else
-            {
-                for (int i = 0; i <= r; i++)
-                {
-                    str = swap(str, l, i);
-                    permutation(str, l + 1, r);
-                    str = swap(str, l, i);
-                }
-            }
-        }
-        public static String swap(String a, int i, int j)
-        {
-            char t;
-            char[] cA = a.ToCharArray();
-            t = cA[i];
-            cA[i] = cA[j];
-            cA[j] = t;
-            string s = new string(cA);
-            return s;
-        }
         static void Main(string[] args)
         {
-            Console.Write("Enter the String : ");
+            Console.WriteLine("Enter a string");
             String s = Console.ReadLine();
-            int n = s.Length;
-            permutation(s, 0, n - 1);
+            String ns = "";
+            foreach (var c in s)
+            {
+                int n = (int)c;
+                if (n >= 119)
+                {
+                    n = n - 23;
+                    Console.Write((char)n );
+                }
+                else {
+                    n = n + 3;
+                    Console.Write((char)n); 
+                }
+            }
             Console.ReadLine();
         }
     }
