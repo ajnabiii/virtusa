@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lab.css">
+    <title>Book Lab test</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="nav">
+        <ul>
+            <li><a href="select.html"><img src="img/bookli.svg" alt=""></a></li>
+            <li><a href="consult.html"><img src="img/Picture2.svg" alt=""></a></li>
+            <li><a href="med.html"><img src="img/Picture3.svg" alt=""></a></li>
+            <li><a href="lab.html"><img src="img/Picture4.svg" alt=""></a></li>
+        </ul>
+    </div>
+        <div class="wrapper">
+            <div class="form">
+                <h2>BOOK YOUR TEST</h2>
+                <input type="text" placeholder="Name*" required>
+                <input type="email" placeholder="email" required>
+                <input type="tel" placeholder="Phone Number*" required>
+                <div class="box">
+                    <input type="text" placeholder="Test name">
+                <input type="date" >
+                </div>
+                <select name="" id="" aria-placeholder="">
+                    <option value="">Select-State</option>
+                    <option value="">Hyd</option>
+                    <option value="">Del</option>
+                    <option value="">BOM</option>
+                </select>
+                <select name="" id="" aria-placeholder="">
+                    <option value="">Select-City</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <button onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function submit(){
+        window.alert("form submitted successfully");
+    }
+</script>
+</html>

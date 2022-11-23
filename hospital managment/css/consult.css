@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,li{
+    color: #237d9f;
+}
+h1{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.2em;
+}
+p{
+    font-size: 1.5rem;
+}
+.content-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+}
+div{
+    padding: 5px 8px;
+    margin: 10px 0;
+}
+::placeholder{
+    font-size: 1.2em;
+    
+}
+.cities ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2px 6px;
+    background-color:rgb(236, 239, 239);
+    border: 1px #237d9f solid;
+    border-radius: 5px;
+    margin: 5px 8px;
+}
+input{
+    outline: none;
+    width: 100%;
+    padding: 4px;
+    padding-left: 14px;
+    border: none;
+    border-bottom: 3px solid #237d9f;
+}
+.box{
+    display: flex;
+}
+.boxes{
+    width: 38%;
+    background-color: rgb(236, 239, 239);
+    margin: 0 1%;
+    min-height: 70px;
+    padding: 20px 5px;
+    display: block;
+    font-size: 12px;
+}
+.boxes:hover{
+    cursor: pointer;
+}
+.boxes *{
+    text-align: center;
+    
+    
+}
+.boxes img{
+    width: 50%;
+    border-radius: 50%;
+}
+.yu{
+    color: #237d9f;
+    background: transparent;
+    text-align: left;
+}
+
+.nav{
+    height: 12vh;
+    padding: 2px 20px;
+    background-color: #237d9f;
+    position: sticky;
+    top:0;
+    display: block;
+    
+    
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0;
+    z-index: 100;
+  }
+  .nav ul li a{
+    height: 90px;
+    width: 100px;
+    display: block;
+    border: 1px white solid;
+    border-radius: 5px;
+    
+}
+.nav ul li a img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    
+}
+.nav ul li a:hover{
+    transform: scale(1.12);
+}

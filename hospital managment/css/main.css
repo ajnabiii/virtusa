@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav{
+    height: 12vh;
+    padding: 2px 20px;
+    background-color: #237d9f;
+    position: sticky;
+    top:0;
+    display: block;
+    
+    
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0;
+    z-index: 100;
+  }
+  .nav ul li a{
+    height: 90px;
+    width: 100px;
+    display: block;
+    border: 1px white solid;
+    border-radius: 5px;
+    
+}
+.nav ul li a img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    
+}
+.nav ul li a:hover{
+    transform: scale(1.12);
+}
+
+
+
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    background-color: #237d9f;
+    color: white;
+}
+.box1{
+    margin: auto 12px;
+    padding: 4%;
+    letter-spacing: 1px;
+}
+.box2{
+    padding: 2px 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-image {
+   
+    background-image:  url("../img/hero.jpg");
+  
+    /* Set a specific height */
+    height: 100vh;
+      width: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 82vh;
+    width: min(40%,400px);
+    padding: 15px 12px;
+  left:30%;
+  background-color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    opacity: 0.8;
+    color: black;
+  }
+  .hero-text h1{
+    color: #237d9f;
+  }
+  p{
+    padding: 4px 2px;
+  }
+  button a{
+    display: block;
+    background-color: #237d9f;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  button{
+    outline: none;
+    border: none;
+  }
+  .box2 ul li img:hover{
+    transform: scale(1.2);
+  }
